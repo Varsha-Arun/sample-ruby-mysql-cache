@@ -17,8 +17,9 @@ before_script:
   - mysql -e 'DROP DATABASE IF EXISTS test;'
   - mysql -e 'CREATE DATABASE IF NOT EXISTS test;'
 
-noifications:
+notifications:
+  email: 
+    recipients: 
+      varsha@shippable.com
+      test12.ci34@gmail.com
   irc: "chat.freenode.net#test-irc"
-  
-
-
